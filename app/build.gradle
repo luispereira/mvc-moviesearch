@@ -22,8 +22,9 @@ android {
 
 ext{
     retrofitVersion = '2.0.2'
-    rxAndroidVersion = '1.2.1'
-    rxJavaVersion = '1.1.6'
+    rxKotlinVersion = '2.1.0'
+    rxAndroidVersion = '2.0.1'
+    rxJavaVersion = '2.1.1'
 }
 
 dependencies {
@@ -47,8 +48,9 @@ dependencies {
     compile "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
     compile "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}"
     //RxJava
-    compile "io.reactivex:rxandroid:${rxAndroidVersion}"
-    compile "io.reactivex:rxjava:${rxJavaVersion}"
+    compile "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}"
+    compile "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}"
+    compile "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
 
 }
 repositories {
