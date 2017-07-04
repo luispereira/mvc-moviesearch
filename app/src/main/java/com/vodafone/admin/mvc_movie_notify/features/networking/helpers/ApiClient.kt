@@ -7,7 +7,7 @@ import retrofit2.Retrofit
  * @author lpereira on 28/06/2017.
  */
 
-class ApiClient() {
+class ApiClient {
     private val TIMEOUT: Long = 30
 
     fun getClient(): retrofit2.Retrofit {

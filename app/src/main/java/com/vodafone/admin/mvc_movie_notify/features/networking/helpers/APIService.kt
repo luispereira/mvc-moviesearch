@@ -2,6 +2,7 @@ package com.vodafone.admin.mvc_movie_notify.features.networking.helpers
 
 import com.vodafone.admin.mvc_movie_notify.features.networking.entities.UpcomingMovieResult
 import retrofit2.http.GET
+import retrofit2.http.Query
 import rx.Observable
 
 /**
@@ -11,6 +12,6 @@ import rx.Observable
 interface APIService{
 
     @GET("movie/upcoming")
-    fun upcomingMovies(apiKey: String): Observable<UpcomingMovieResult>
+    fun upcomingMovies(@Query("api_key") apiKey: String): Observable<UpcomingMovieResult>
 
 }
